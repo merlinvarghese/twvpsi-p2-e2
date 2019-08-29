@@ -15,8 +15,9 @@ class ProbabilityEvent {
         if (this != obj)
             return false;
 
-        if ((obj == null) || (obj.getClass() != this.getClass()))
+        if ((obj == null) || (obj.getClass() != this.getClass())) {
             return false;
+        }
 
         return (this.probability.compareTo(((ProbabilityEvent) obj).probability) == 0);
     }
@@ -24,5 +25,10 @@ class ProbabilityEvent {
     @Override
     public int hashCode() {
         return Objects.hashCode(this.probability);
+    }
+
+    Double combineProbability(ProbabilityEvent probabilityEventOther)
+    {
+        return this.probability * probabilityEventOther.probability;
     }
 }
