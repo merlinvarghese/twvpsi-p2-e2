@@ -27,8 +27,7 @@ class ProbabilityEvent {
         return Objects.hashCode(this.probability);
     }
 
-    Double combineProbability(ProbabilityEvent probabilityEventOther)
-    {
+    Double combineProbability(ProbabilityEvent probabilityEventOther) {
         return this.probability * probabilityEventOther.probability;
     }
 }
