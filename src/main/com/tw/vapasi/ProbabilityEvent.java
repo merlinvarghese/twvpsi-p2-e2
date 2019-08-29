@@ -2,13 +2,13 @@ package com.tw.vapasi;
 
 //Holds the probability of occurrences of an event
 class ProbabilityEvent {
-    private double probability;
+    private Double probability;
 
-    ProbabilityEvent(double probability) {
+    ProbabilityEvent(Double probability) {
         this.probability = probability;
     }
 
-    boolean isEqual(ProbabilityEvent probability) {
-        return true;
+    boolean equals(ProbabilityEvent probabilityEvent) {
+        return (this.probability.compareTo(probabilityEvent.probability) == 0 ? true : false);
     }
 }
