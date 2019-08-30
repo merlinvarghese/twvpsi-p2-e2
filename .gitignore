@@ -1,4 +1,8 @@
 .idea/
 exercise-02.iml
 out/
-src/test/
+.DS_Store
+src/.DS_Store
+src/main/.DS_Store
+src/main/com/.DS_Store
+src/main/com/tw/.DS_Store
